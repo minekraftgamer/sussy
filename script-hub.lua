@@ -70,6 +70,6 @@ Toggles.DOORS|script:OnChanged(function()
     
     -- Now you can access the `mspaint` variable
     print(mspaint)
-    
+    wait(0.05)
 end
 
