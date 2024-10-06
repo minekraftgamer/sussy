@@ -1,6 +1,7 @@
 --[[LIBRARY]]
 
 local repo = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/'
+local sussyrepo = 'https://github.com/minekraftgamer/sussy/main/'
 
 local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
@@ -60,7 +61,15 @@ LeftGroupBox:AddToggle('DOORS|script', {
 
 Toggles.DOORS|script:OnChanged(function()
     print("mspaint v2 executed")
-    local mspaint = require("doors-1")
+
+    -- Load and execute the script
+    local loadedFunc = loadstring(game:HttpGet(sussyrepo .. 'script-hub-cogs/doors-1'))
+    
+    -- Call the function and capture the returned value
+    local mspaint = loadedFunc()
+    
+    -- Now you can access the `mspaint` variable
     print(mspaint)
+    
 end
 
