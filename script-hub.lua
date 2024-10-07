@@ -34,7 +34,7 @@ local LeftGroupBox = Tabs.Main:AddLeftGroupbox('DOORS')
 
 LeftGroupBox:AddToggle('DOORS|script', {
     Text = 'mspaint v2 | DOORS',
-    Default = true, -- Default value (true / false)
+    Default = false, -- Default value (true / false)
     Tooltip = 'Executes mspaint v2', -- Information shown when you hover over the toggle
 
     Callback = function(Value)
